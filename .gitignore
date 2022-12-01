@@ -1,0 +1,7 @@
+.gradle
+.idea
+build
+src/**/*.txt
+aoc2022/GoLang/resources
+*.iml
+go.mod
