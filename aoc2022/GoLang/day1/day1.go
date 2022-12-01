@@ -8,13 +8,13 @@ import (
 )
 
 func PartOne() {
-	elves := getCaloriesCarried()
+	elves := getCaloriesSlice()
 
 	fmt.Println(max(elves))
 }
 
 func PartTwo() {
-	elves := getCaloriesCarried()
+	elves := getCaloriesSlice()
 
 	top := maxThree(elves)
 	var total int
@@ -25,20 +25,19 @@ func PartTwo() {
 	fmt.Println(total)
 }
 
-func getCaloriesCarried() []int {
+func getCaloriesSlice() []int {
 	input := utils.ReadLinesFromFile("resources/Day01.txt")
 	var elves []int
-	var current int
+	var sum int
 
-	for _, l := range input {
-		if l == "" {
-			elves = append(elves, current)
-			current = 0
+	for _, cal := range input {
+		if cal == "" {
+			elves = append(elves, sum)
+			sum = 0
 			continue
 		}
-		i, _ := strconv.Atoi(l)
-
-		current += i
+		calInt, _ := strconv.Atoi(cal)
+		sum += calInt
 	}
 	return elves
 }
