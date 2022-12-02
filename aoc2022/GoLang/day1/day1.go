@@ -26,7 +26,7 @@ func PartTwo() {
 }
 
 func getCaloriesSlice() []int {
-	input := utils.ReadLinesFromFile("resources/Day01.txt")
+	input := utils.ReadLinesFromFile("aoc2022/GoLang/resources/Day01.txt")
 	var elves []int
 	var sum int
 
