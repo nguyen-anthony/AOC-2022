@@ -4,6 +4,7 @@ import (
 	"AOC-2022-Go/aoc2022/GoLang/day1"
 	"AOC-2022-Go/aoc2022/GoLang/day2"
 	"AOC-2022-Go/aoc2022/GoLang/day3"
+	"AOC-2022-Go/aoc2022/GoLang/day4"
 )
 
 func main() {
@@ -13,4 +14,6 @@ func main() {
 	day2.PartTwo()
 	day3.PartOne()
 	day3.PartTwo()
+	day4.PartOne()
+	day4.PartTwo()
 }
