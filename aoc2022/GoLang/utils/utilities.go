@@ -31,3 +31,11 @@ func ReadLines(file string) []string {
 
 	return lines
 }
+
+func GetCharValueFromAscii(i uint8) int {
+	if i >= 65 && i <= 90 {
+		return int(i%32 + 26)
+	} else {
+		return int(i % 32)
+	}
+}
